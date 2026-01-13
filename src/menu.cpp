@@ -29,6 +29,8 @@ bool jumpFunc(int code)
         case 1:
             echo();
             break;
+	case 2:
+	    break;`
         default:
             echo();
     }
