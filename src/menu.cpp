@@ -25,11 +25,12 @@ int menu()
 
 bool jumpFunc(int code)
 {
-    switch (code)
-    {
-    case 1:
-        echo();
-        break;
+    switch (code) {
+        case 1:
+            echo();
+            break;
+	      case 2:
+	    break;
     case 3:
         // test conflict
         break;
