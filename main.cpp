@@ -1,10 +1,12 @@
 #include "include/menu.h"
 
-#include <iostream>
-#include <cstdio>
-
 int main()
 {
-    std::cout << jumpFunc(menu());
+    int choice;
+    while (1)
+    {
+        choice = menu();
+        jumpFunc(choice);
+    }
     return 0;
 }

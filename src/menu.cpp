@@ -1,7 +1,9 @@
+#include "../include/add.h"
 #include "../include/pdms.h"
 #include "../include/showInfo.h"
 
 #include <cstdio>
+#include <cstdlib>
 
 int menu()
 {
@@ -23,14 +25,25 @@ int menu()
     return choice;
 }
 
+void close()
+{
+    printf("\t\t\t退出系统");
+    exit(1);
+}
+
 bool jumpFunc(int code)
 {
-    switch (code) {
-        case 1:
-            echo();
-            break;
-	      case 2:
-	    break;
+    switch (code)
+    {
+    case 0:
+        close();
+        break;
+    case 1:
+        echo();
+        break;
+    case 2:
+        addInfo();
+        break;
     case 3:
         // test conflict
         break;
